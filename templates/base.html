@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div id="main">
+    {% block content %}
+    <h1>{{satisfaction_survey.title}}</h1>
+    <form action="/start" method="POST">
+    <button>Start Survey</button>
+    </form>
+    {% endblock %}
+    </div>
+</body>
+</html>
